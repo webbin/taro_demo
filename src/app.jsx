@@ -3,6 +3,7 @@ import Index from './pages/index'
 
 import './app.css'
 import PagePath from "./pages/PagePath";
+import AppConfig from "./AppConfig";
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
@@ -20,18 +21,20 @@ class App extends Component {
 
   componentDidCatchError () {}
 
-  config = {
-    pages: [
-	    'pages/index/index',
-	    'pages/settings/MoreSettings',
-    ],
-    window: {
-      backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
-    }
-  }
+  // config = {
+  //   pages: [
+	//     'pages/index/index',
+	//     'pages/settings/MoreSettings',
+  //   ],
+  //   window: {
+  //     backgroundTextStyle: 'light',
+  //     navigationBarBackgroundColor: '#fff',
+  //     navigationBarTitleText: 'WeChat',
+  //     navigationBarTextStyle: 'black'
+  //   }
+  // }
+
+	config = AppConfig;
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数

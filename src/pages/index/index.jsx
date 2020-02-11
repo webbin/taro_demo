@@ -1,7 +1,9 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Button } from '@tarojs/components'
+import { View, Text, Button, Image } from '@tarojs/components'
 import './index.css'
 import PateRouter from "../PageRoute";
+import HomeLockImage from "../home/HomeLockImage";
+import bg from '../../resource/home/bg.png';
 
 export default class Index extends Component {
 
@@ -35,8 +37,10 @@ export default class Index extends Component {
 
 	fetchNet = () => {
 		Taro.request({
-			url: 'https://www.baidu.com'
+			// url: 'https://www.baidu.com'
+			url: 'http://127.0.0.1:1087'
 		}).then((response) => {
+			console.log(response);
 			return response.text();
 		}).then((text) => {
 			console.log(text);
@@ -47,16 +51,12 @@ export default class Index extends Component {
 
 	render() {
 		return (
-			<View className='index'>
-				<Text className='big_text'>
-					Hello world!
-				</Text>
-
-				<Button onClick={this.onClick}>
+			<View className='container'>
+				<HomeLockImage />
+				<Button className='home_buttons' onClick={this.onClick}>
 					Go To More Settings
 				</Button>
-
-				<Button onClick={this.fetchNet}>
+				<Button className='home_buttons' onClick={this.fetchNet}>
 					Network
 				</Button>
 			</View>

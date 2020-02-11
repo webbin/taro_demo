@@ -1,6 +1,9 @@
 
 import Taro from '@tarojs/taro'
-import PagePath from "./PagePath";
+import AppConfig from "../AppConfig";
+
+
+const PagePath = AppConfig.pages;
 
 const getPageUrl = (path) => {
 	return '/' + path;

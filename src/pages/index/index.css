@@ -1,4 +1,20 @@
 
 .big_text {
-    font-size: 30px;
+    font-size: 2em;
+    padding: 40px 100px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.go_to_more_settings {
+    margin: 20px 40px;
+}
+
+.home_buttons {
+    margin: 20px 40px;
 }

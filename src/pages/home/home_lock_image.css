@@ -1,0 +1,22 @@
+
+
+.lock_view {
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    height: 300px;
+    width: 100%;
+}
+
+.image_text {
+    color: white;
+    font-size: 28pt;
+}
+
+.lock_image {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
